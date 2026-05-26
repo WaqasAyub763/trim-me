@@ -1,0 +1,41 @@
+# Files that shouldn't be copied into the Docker image
+
+.git
+.gitignore
+.gitattributes
+
+.env
+.env.example
+.env.backup
+.env.production
+
+node_modules
+vendor
+bootstrap/cache/*.php
+
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/app/database.sqlite
+
+# Local SQLite DB — fresh one is created on the volume at boot
+database/database.sqlite
+
+# Static design mockups not needed at runtime
+design
+
+# IDE / OS junk
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.phpunit.cache
+.phpunit.result.cache
+coverage
+tests
+phpunit.xml
+
+README.md
