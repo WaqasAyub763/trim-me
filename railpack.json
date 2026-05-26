@@ -4,13 +4,32 @@
     "php": "8.3"
   },
   "buildAptPackages": [
+    "autoconf",
     "bison",
     "re2c",
     "pkg-config",
+    "make",
+    "gcc",
+    "g++",
+    "mlocate",
+    "xz-utils",
     "libxml2-dev",
+    "libssl-dev",
+    "libcurl4-openssl-dev",
     "libsqlite3-dev",
+    "libonig-dev",
     "libzip-dev",
     "libicu-dev",
-    "libonig-dev"
+    "libreadline-dev",
+    "libedit-dev",
+    "libpng-dev",
+    "libjpeg-dev",
+    "libfreetype6-dev",
+    "libwebp-dev",
+    "libxslt1-dev",
+    "libsodium-dev",
+    "libbz2-dev",
+    "libffi-dev",
+    "zlib1g-dev"
   ]
 }
