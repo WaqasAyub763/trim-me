@@ -10,9 +10,14 @@ class TrustProxies extends Middleware
     /**
      * The trusted proxies for this application.
      *
+     * '*' trusts any proxy. Safe on Railway/Heroku/Fly-style platforms where
+     * the platform's edge proxy is the only thing routing traffic to the
+     * container — required so X-Forwarded-Proto is honored and asset() /
+     * url() / route() generate https:// URLs in production.
+     *
      * @var array<int, string>|string|null
      */
-    protected $proxies;
+    protected $proxies = '*';
 
     /**
      * The headers that should be used to detect proxies.
