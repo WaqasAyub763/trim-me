@@ -31,5 +31,8 @@
     "libbz2-dev",
     "libffi-dev",
     "zlib1g-dev"
-  ]
+  ],
+  "deploy": {
+    "startCommand": "mkdir -p storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache && touch database/database.sqlite && chmod -R 775 storage bootstrap/cache && php artisan config:clear && php artisan migrate --force && (php artisan db:seed --force --class=DatabaseSeeder || true) && php artisan serve --host 0.0.0.0 --port ${PORT:-8080}"
+  }
 }
