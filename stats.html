@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analytics — trim.sh/x7Kn2P</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">T</span>
+        <span class="brand__name">Trim</span>
+      </a>
+      <nav class="app-nav" aria-label="Primary">
+        <a href="index.html" class="app-nav__item">Create</a>
+        <a href="stats.html" class="app-nav__item app-nav__item--active">Analytics</a>
+      </nav>
+      <div class="app-header__right">
+        <span class="status-pill">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          All systems normal
+        </span>
+        <span class="kbd">v0.1.0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <div class="page-head__eyebrow">Analytics</div>
+      <h1 class="page-head__title">Click analytics</h1>
+      <p class="page-head__subtitle">
+        Every visit to your short link is logged with timestamp, IP,
+        referer, and user agent. Data shown is for the last 14 days.
+      </p>
+    </div>
+
+    <section class="link-header" aria-label="Link summary">
+      <div class="link-header__info">
+        <div class="link-header__short">
+          <span class="domain">trim.sh</span><span class="slash">/</span><span class="code">x7Kn2P</span>
+        </div>
+        <div class="link-header__original">
+          <span class="arrow">→</span>
+          <span>https://github.com/laravel/laravel/blob/10.x/README.md</span>
+        </div>
+      </div>
+      <div class="link-header__actions">
+        <button class="btn btn--secondary btn--sm" type="button">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          Copy link
+        </button>
+        <a class="btn btn--secondary btn--sm" href="#" target="_blank" rel="noopener">
+          Open
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="kpi-grid" aria-label="Headline metrics">
+      <div class="kpi">
+        <div class="kpi__label-row">
+          <span>Total clicks</span>
+          <span class="kpi__delta kpi__delta--up">+18.2%</span>
+        </div>
+        <div class="kpi__value tnum">1,247</div>
+        <div class="muted" style="font-size: var(--t-sm);">vs. 1,055 prior 14 days</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label-row">
+          <span>Last 24 hours</span>
+          <span class="kpi__delta kpi__delta--up">+4.1%</span>
+        </div>
+        <div class="kpi__value tnum">142</div>
+        <div class="muted" style="font-size: var(--t-sm);">vs. 136 yesterday</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label-row">
+          <span>Last 7 days</span>
+          <span class="kpi__delta kpi__delta--down">−6.3%</span>
+        </div>
+        <div class="kpi__value tnum">638</div>
+        <div class="muted" style="font-size: var(--t-sm);">vs. 681 prior week</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label-row">
+          <span>Avg / day</span>
+          <span class="kpi__delta kpi__delta--flat">±0%</span>
+        </div>
+        <div class="kpi__value tnum">89</div>
+        <div class="muted" style="font-size: var(--t-sm);">over 14-day window</div>
+      </div>
+    </section>
+
+    <section class="chart" aria-label="Clicks per day, last 14 days">
+      <header class="chart__head">
+        <div>
+          <h2 class="chart__title" style="display: inline;">Clicks per day</h2>
+          <span class="chart__sub">May 13 – May 26, 2026</span>
+        </div>
+        <div class="chart__legend">
+          <span class="chart__legend-item"><span class="chart__legend-swatch"></span> Daily clicks</span>
+          <span class="chart__legend-item"><span class="chart__legend-swatch chart__legend-swatch--peak"></span> Peak (May 21)</span>
+          <span class="chart__legend-item"><span class="chart__legend-swatch chart__legend-swatch--empty"></span> No clicks</span>
+        </div>
+      </header>
+      <div class="chart__body">
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Wed</span><span class="date">May 13</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 47%"></div></div>
+          <span class="bar-row__value">71</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Thu</span><span class="date">May 14</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 62%"></div></div>
+          <span class="bar-row__value">94</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Fri</span><span class="date">May 15</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 81%"></div></div>
+          <span class="bar-row__value">123</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Sat</span><span class="date">May 16</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 28%"></div></div>
+          <span class="bar-row__value">42</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Sun</span><span class="date">May 17</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 21%"></div></div>
+          <span class="bar-row__value">31</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Mon</span><span class="date">May 18</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 56%"></div></div>
+          <span class="bar-row__value">85</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Tue</span><span class="date">May 19</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 72%"></div></div>
+          <span class="bar-row__value">109</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Wed</span><span class="date">May 20</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 88%"></div></div>
+          <span class="bar-row__value">133</span>
+        </div>
+        <div class="bar-row bar-row--peak">
+          <span class="bar-row__label"><span class="dow">Thu</span><span class="date">May 21</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill bar-row__fill--peak" style="width: 100%"></div></div>
+          <span class="bar-row__value">152</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Fri</span><span class="date">May 22</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 79%"></div></div>
+          <span class="bar-row__value">120</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Sat</span><span class="date">May 23</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 33%"></div></div>
+          <span class="bar-row__value">50</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Sun</span><span class="date">May 24</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 25%"></div></div>
+          <span class="bar-row__value">38</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Mon</span><span class="date">May 25</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 59%"></div></div>
+          <span class="bar-row__value">89</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row__label"><span class="dow">Tue</span><span class="date">May 26</span></span>
+          <div class="bar-row__track"><div class="bar-row__fill" style="width: 70%"></div></div>
+          <span class="bar-row__value">110</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2" aria-label="Referrers and recent clicks">
+      <div class="card">
+        <header class="card__header">
+          <div>
+            <h2 class="card__title">Top referrers</h2>
+            <p class="card__subtitle">14-day totals</p>
+          </div>
+          <span class="badge">10 sources</span>
+        </header>
+        <div class="card__body" style="padding-top: var(--s-4); padding-bottom: var(--s-4);">
+          <div class="ref-list">
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">G</span>github.com</span>
+              <span class="ref-list__value">421 · 33.8%</span>
+              <span class="ref-list__bar" style="width: 100%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">H</span>news.ycombinator.com</span>
+              <span class="ref-list__value">238 · 19.1%</span>
+              <span class="ref-list__bar" style="width: 56%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">X</span>twitter.com</span>
+              <span class="ref-list__value">186 · 14.9%</span>
+              <span class="ref-list__bar" style="width: 44%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">·</span><em>Direct</em></span>
+              <span class="ref-list__value">142 · 11.4%</span>
+              <span class="ref-list__bar" style="width: 34%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">R</span>reddit.com/r/PHP</span>
+              <span class="ref-list__value">98 · 7.9%</span>
+              <span class="ref-list__bar" style="width: 23%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">G</span>google.com</span>
+              <span class="ref-list__value">74 · 5.9%</span>
+              <span class="ref-list__bar" style="width: 18%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">L</span>linkedin.com</span>
+              <span class="ref-list__value">42 · 3.4%</span>
+              <span class="ref-list__bar" style="width: 10%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">D</span>dev.to</span>
+              <span class="ref-list__value">28 · 2.2%</span>
+              <span class="ref-list__bar" style="width: 7%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">S</span>stackoverflow.com</span>
+              <span class="ref-list__value">12 · 1.0%</span>
+              <span class="ref-list__bar" style="width: 3%;"></span>
+            </div>
+            <div class="ref-list__row">
+              <span class="ref-list__name"><span class="ref-list__favicon">·</span>Other</span>
+              <span class="ref-list__value">6 · 0.5%</span>
+              <span class="ref-list__bar" style="width: 2%;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <header class="card__header">
+          <div>
+            <h2 class="card__title">Recent clicks</h2>
+            <p class="card__subtitle">Last 20 of 1,247 entries</p>
+          </div>
+          <a href="#" class="btn btn--ghost btn--sm">
+            Export CSV
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </a>
+        </header>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="col-time">Timestamp</th>
+                <th class="col-ip">IP address</th>
+                <th class="col-referer">Referer</th>
+                <th class="col-agent">Browser</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">04:58:21</span></td>
+                <td class="col-ip">203.0.113.41</td>
+                <td class="col-referer"><span class="favicon">H</span>news.ycombinator.com</td>
+                <td class="col-agent"><span class="browser">Safari 17</span><span class="os">macOS 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">04:42:08</span></td>
+                <td class="col-ip">198.51.100.12</td>
+                <td class="col-referer"><span class="badge badge--direct">Direct</span></td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">Windows 10</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">04:31:55</span></td>
+                <td class="col-ip">203.0.113.41</td>
+                <td class="col-referer"><span class="favicon">X</span>twitter.com</td>
+                <td class="col-agent"><span class="browser">Safari Mobile</span><span class="os">iOS 17</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">03:55:12</span></td>
+                <td class="col-ip">192.0.2.88</td>
+                <td class="col-referer"><span class="favicon">G</span>google.com</td>
+                <td class="col-agent"><span class="browser">Firefox 126</span><span class="os">Linux</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">03:14:33</span></td>
+                <td class="col-ip">198.51.100.7</td>
+                <td class="col-referer"><span class="badge badge--direct">Direct</span></td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">macOS 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">02:48:07</span></td>
+                <td class="col-ip">203.0.113.200</td>
+                <td class="col-referer"><span class="favicon">L</span>linkedin.com</td>
+                <td class="col-agent"><span class="browser">Edge 124</span><span class="os">Windows 11</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">01:31:44</span></td>
+                <td class="col-ip">198.51.100.45</td>
+                <td class="col-referer"><span class="favicon">G</span>github.com</td>
+                <td class="col-agent"><span class="browser">Safari 17</span><span class="os">macOS 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 26</span> <span class="clock">00:12:19</span></td>
+                <td class="col-ip">192.0.2.14</td>
+                <td class="col-referer"><span class="badge badge--direct">Direct</span></td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">Android 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">23:44:51</span></td>
+                <td class="col-ip">203.0.113.99</td>
+                <td class="col-referer"><span class="favicon">G</span>github.com</td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">Windows 10</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">22:18:02</span></td>
+                <td class="col-ip">198.51.100.32</td>
+                <td class="col-referer"><span class="favicon">H</span>news.ycombinator.com</td>
+                <td class="col-agent"><span class="browser">Firefox 126</span><span class="os">macOS 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">21:09:17</span></td>
+                <td class="col-ip">203.0.113.41</td>
+                <td class="col-referer"><span class="badge badge--bot">Bot · curl/8.4</span></td>
+                <td class="col-agent"><span class="browser">curl 8.4.0</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">20:38:29</span></td>
+                <td class="col-ip">192.0.2.50</td>
+                <td class="col-referer"><span class="favicon">X</span>t.co</td>
+                <td class="col-agent"><span class="browser">Safari Mobile</span><span class="os">iOS 17</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">19:52:41</span></td>
+                <td class="col-ip">198.51.100.61</td>
+                <td class="col-referer"><span class="favicon">R</span>reddit.com/r/PHP</td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">Windows 11</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">18:24:13</span></td>
+                <td class="col-ip">203.0.113.7</td>
+                <td class="col-referer"><span class="badge badge--bot">Bot · Slack</span></td>
+                <td class="col-agent"><span class="browser">Slackbot 1.0</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">17:11:08</span></td>
+                <td class="col-ip">192.0.2.211</td>
+                <td class="col-referer"><span class="favicon">G</span>google.com</td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">macOS 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">15:48:36</span></td>
+                <td class="col-ip">198.51.100.18</td>
+                <td class="col-referer"><span class="favicon">D</span>dev.to</td>
+                <td class="col-agent"><span class="browser">Firefox 126</span><span class="os">Windows 11</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">14:02:55</span></td>
+                <td class="col-ip">203.0.113.41</td>
+                <td class="col-referer"><span class="badge badge--direct">Direct</span></td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">Android 13</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">12:55:21</span></td>
+                <td class="col-ip">192.0.2.144</td>
+                <td class="col-referer"><span class="favicon">G</span>github.com</td>
+                <td class="col-agent"><span class="browser">Safari 17</span><span class="os">macOS 14</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">11:33:47</span></td>
+                <td class="col-ip">198.51.100.94</td>
+                <td class="col-referer"><span class="badge badge--direct">Direct</span></td>
+                <td class="col-agent"><span class="browser">Chrome 124</span><span class="os">Linux</span></td>
+              </tr>
+              <tr>
+                <td class="col-time"><span class="date">May 25</span> <span class="clock">10:08:12</span></td>
+                <td class="col-ip">203.0.113.183</td>
+                <td class="col-referer"><span class="favicon">G</span>google.com</td>
+                <td class="col-agent"><span class="browser">Edge 124</span><span class="os">Windows 10</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div style="margin-top: var(--s-8); display: flex; justify-content: space-between; align-items: center; gap: var(--s-4);">
+      <a class="btn btn--ghost" href="index.html">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 12H5M11 18l-6-6 6-6"/>
+        </svg>
+        Create another link
+      </a>
+      <span class="muted" style="font-size: var(--t-sm);">Showing data up to May 26, 2026 · 05:08 UTC</span>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="app-footer__inner">
+      <span>© 2026 Trim · A small internal link shortener</span>
+      <div class="app-footer__links">
+        <a href="#">Documentation</a>
+        <a href="#">Privacy</a>
+        <a href="#">Source</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

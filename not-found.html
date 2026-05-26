@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Not found — Trim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark">T</span>
+        <span class="brand__name">Trim</span>
+      </a>
+      <nav class="app-nav" aria-label="Primary">
+        <a href="index.html" class="app-nav__item">Create</a>
+        <a href="stats.html" class="app-nav__item">Analytics</a>
+      </nav>
+      <div class="app-header__right">
+        <span class="status-pill">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          All systems normal
+        </span>
+        <span class="kbd">v0.1.0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="state" role="alert" aria-labelledby="nf-title">
+      <div class="state__icon state__icon--danger" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <h1 class="state__title" id="nf-title">Link not found</h1>
+      <p class="state__body">
+        We couldn't find a short link with that code. It may have been
+        mistyped, deleted, or never existed in the first place.
+      </p>
+      <div class="state__code">
+        trim.sh<span class="slash">/</span><span class="code">zZzZzZ</span>
+      </div>
+      <div class="state__actions">
+        <a class="btn btn--secondary" href="javascript:history.back()">Go back</a>
+        <a class="btn btn--primary" href="index.html">
+          Create a new link
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="app-footer__inner">
+      <span>© 2026 Trim · A small internal link shortener</span>
+      <div class="app-footer__links">
+        <a href="#">Documentation</a>
+        <a href="#">Privacy</a>
+        <a href="#">Source</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
